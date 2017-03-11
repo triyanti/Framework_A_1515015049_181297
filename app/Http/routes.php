@@ -18,3 +18,11 @@ Route::get('/', function () {
 Route::get("/public",function(){
 	return "Nama : Triyanti Wafda Malini <br> NIM : 1515015049";
 });
+
+Route::get('pengguna/{pengguna}',function ($pengguna){
+	return "Hallo World dari pengguna $pengguna";
+});
+
+Route::get('berita/{berita?}',function ($berita = "Laravel 5"){
+	return "berita $berita belum dibaca";
+});
