@@ -27,4 +27,6 @@ class MahasiswaController extends Controller
    	$mahasiswa->save();
    	return "selamat data anda dengan nama {$mahasiswa->nama} telah disimpan";
    }
+
+   $mahasiswa = Pengguna::find(1)->mahasiswa;
 }

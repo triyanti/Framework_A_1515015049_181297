@@ -53,4 +53,6 @@ class PenggunaController extends Controller
         $informasi = $pengguna->delete() ? 'berhasil hapus data' : 'gagal hapus data';
         return redirect('pengguna')->with(['informasi'=>$informasi]);
     }
+
+    
 }

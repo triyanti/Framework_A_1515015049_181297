@@ -18,7 +18,7 @@ class RuanganController extends Controller
    {
       return view('ruangan.tambah');
    	//return $this->simpan();
-   
+   }
    public function simpan(Requests $input)
    {
    	$ruangan = new Ruangan();
